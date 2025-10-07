@@ -36,39 +36,41 @@ function Weather() {
     }
   };
   return (
-    <div className="Weather">
-      <h1>Weather App</h1>
-      <form action="">
-        <input
-          type="text"
-          name="city"
-          onChange={(e) => {
-            handlechange(e);
-          }}
-          placeholder="Enter City Name"
-        />
-        <input
-          type="text"
-          name="country"
-          placeholder="Enter Country Name"
-          onChange={(e) => {
-            handlechange(e);
-          }}
-        />
-        <button
-          onClick={(e) => {
-            WeatherData(e);
-          }}
-          className="getWeather"
-        >
-          Submit
-        </button>
-      </form>
-      {Weather.data != undefined ? (
-        <div>
-          <Dispalyweather data={Weather.data} />
-        </div>
-      ) : null}
+    <div className="contaner">
+      <div className="Weather">
+        <h1>Weather App</h1>
+        <form action="">
+          <input
+            type="text"
+            name="city"
+            onChange={(e) => {
+              handlechange(e);
+            }}
+            placeholder="Enter City Name"
+          />
+          <input
+            type="text"
+            name="country"
+            placeholder="Enter Country Name"
+            onChange={(e) => {
+              handlechange(e);
+            }}
+          />
+          <button
+            onClick={(e) => {
+              WeatherData(e);
+            }}
+            className="getWeather"
+          >
+            Submit
+          </button>
+        </form>
+        {Weather.data != undefined ? (
+          <div>
+            <Dispalyweather data={Weather.data} />
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }
