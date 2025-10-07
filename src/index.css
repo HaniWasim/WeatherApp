@@ -18,7 +18,8 @@ html, body {
   position: relative;
   min-height: 100vh; /* Full viewport height */
   width: 100%;
-  overflow: hidden; /* No white edges */
+   /* position: relative;
+  min-height: 200vh;  */
 }
 
 /* Background video styling */
@@ -31,5 +32,8 @@ html, body {
   object-fit: cover;
   z-index: -1;
 }
+.content {
+  padding-bottom: 300px; /* or more if needed */
 
+}
 
